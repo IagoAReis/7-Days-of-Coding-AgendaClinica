@@ -1,0 +1,22 @@
+.cabecalho{
+    display: flex;
+    margin: 2em 7.5625em 1.375em 1em;
+}
+.cabecalho__corpo{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+.cabecalho__titulo{
+    font-weight: 700;
+    font-size: 1.375em;
+    padding-bottom: 0.25em;
+}
+.cabecalho__texto{
+    font-size: 0.875em;
+    color: var(--cinza);
+}
+.dia{
+    font-weight: 700;
+    margin: 0.5em 1em;
+}

@@ -1,0 +1,64 @@
+.rodape__wide{
+    display: none;
+}
+.rodape__formulario{
+    display: none;
+}
+@media screen and (min-width: 1024px) {
+    .rodape__wide{
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+    box-shadow: 0.5em 0.25em 0.25em 0.25em var(--borda);
+    border-radius: 0.25em;
+    }
+    .rodape__wide-titulo{
+        font-weight: 600;
+        font-size: 2em;
+        color: var(--cinza);
+        margin: 1em;
+    }
+    .rodape__formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+    }
+    .formulario__nome input[type="text"]{
+        align-items: center;
+        padding: 1em 6em;
+        border: 1px solid var(--cinza);
+        border-radius: 24px;
+        margin: 1em;
+    }
+    .sobrenome{
+        margin-left: -2.75em;
+    }
+    .formulairio__email input[type="email"]{
+        padding: 1em 6em;
+        border: 1px solid var(--cinza);
+        border-radius: 24px;
+        margin: 1em;
+    }
+    .formulario__modalidade{
+        margin: 1em;
+    }
+    .formulario__dia{
+        margin: 1em;
+    }
+    .formulario__horario{
+        margin: 1em;
+        margin-left: -2em;
+    }
+    .formulario__botao{
+        margin: 1em;
+        font-weight: 500;
+        font-size: 0.8em;
+        color: var( --cor-background);
+        text-decoration: none;
+        border: 1px solid var(--azul);
+        padding: 1em 5em;
+        border-radius: 6px;
+        background-color: var(--azul);
+    }
+}

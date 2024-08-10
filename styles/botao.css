@@ -1,0 +1,116 @@
+/* Floating menu container */
+.floating-menu {
+    position: fixed;
+    bottom: 2em;
+    right: 0.5em;
+    z-index: 1001;
+}
+/* Hidden checkbox */
+.menu-toggle {
+    display: none;
+}
+/* General button styling */
+.floating-button {
+    position: fixed;  /* Fixes the button's position relative to the viewport */
+    bottom: 2em;     /* Distance from the bottom of the viewport */
+    right: 0.5em;      /* Distance from the right edge of the viewport */
+    width: 2em;      /* Width of the button */
+    height: 2em;     /* Height of the button */
+    background-color: var(--azul); /* Background color */
+    color: white;     /* Text color */
+    border-radius: 50%; /* Makes the button circular */
+    text-align: center; /* Centers the text */
+    line-height: 2em; /* Vertically centers the text */
+    font-size: 2em;  /* Size of the text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow */
+    text-decoration: none; /* Removes underline from the anchor tag */
+    z-index: 1001;    /* Ensures the button is above other content */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+/*.floating-button:hover {
+    transform: scale(1.2);
+}*/
+/* Menu items styling */
+.menu-items {
+    display: none; /* Hidden by default */
+    position: absolute;
+    bottom: 4em; /* Position above the floating button */
+    right: 0.25em;
+    gap: 1em;
+    z-index: 1001;
+}
+.menu-item {
+    width: 4em;
+    height: 4em;
+    margin: 0.5em;
+    background-color: var(--azul);
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center; /* Vertically centers the content */
+    justify-content: center; /* Horizontally centers the content */
+}
+.menu-text {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    width: 21.5em;
+}
+.menu-text1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75em;
+    font-weight: 500;
+    background-color: var(--cor-background);
+    color: var(--cor-fonte-primaria);
+    padding: 0.3em 0.5em;
+    border: 1px solid var(--cor-background);
+    border-radius: 1.5em;
+    font-size: 1em;
+    margin: 2.5em 0 3em 2.75em;
+}
+.menu-text2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75em;
+    font-weight: 500;
+    background-color: var(--cor-background);
+    color: var(--cor-fonte-primaria);
+    padding: 0.3em 0.4em;
+    border: 1px solid var(--cor-background);
+    border-radius: 2em;
+    font-size: 1em;
+    margin: 0 0 3em 7.5em;
+}
+/*.menu-item:hover {
+    transform: scale(1.2);
+}*/
+/* Overlay styling */
+.overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+/* Show menu items and overlay when checkbox is checked */
+.menu-toggle:checked ~ .menu-items {
+    display: flex;
+}
+.menu-toggle:checked ~ .overlay {
+    display: block;
+}
+
+@media screen and (min-width: 1728px) {
+    .floating-menu{
+        display: none;
+    }
+}

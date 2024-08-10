@@ -1,0 +1,105 @@
+.paciente{
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center; /*useless part, but keep it here*/
+   /* max-width: 23em;*/
+    max-width: 90%;
+    margin: 0 1em 1em 1em;
+    box-shadow: 0.25em 0.25em 0.25em 0.25em var(--borda);
+    border-radius: 0.25em;
+    
+}
+
+.paciente__ficha{
+    display: flex;
+    margin: 0 1em 1em 1em;
+    
+}
+.paciente__foto{
+    margin: 1em;
+}
+.paciente__nome{
+    margin-top: 1em;
+    font-weight: 700;
+    font-size: 0.8em;
+}
+.paciente__categoria{
+    padding-top: 0.5em;
+    font-size: 0.75em;
+    color: var(--cinza);
+}
+.camera{
+    margin-right: 0.5em;
+}
+.paciente__chat{
+    margin: 1em 1em 1em 7.5em;
+}
+.linha{
+    width: 100%;
+    height: 1px; 
+    background: var(--borda);
+    margin-bottom: 0.5em;
+}
+.paciente__ficha-atendimento{
+    display: flex;
+    flex-direction: column;
+}
+.paciente__horario{
+    font-weight: 500;
+    font-size: 0.75em;
+    margin: 0 0 0.5em 1em;
+}
+.paciente__ficha-2{
+    margin: 1em 1em 2em 1em;
+    text-align: center;
+}
+.paciente__video{
+    font-weight: 500;
+    font-size: 0.8em;
+    color: var( --cor-background);
+    text-decoration: none;
+    border: 1px solid var(--laranja);
+    padding: 0.8em 1em;
+    border-radius: 6px;
+    background-color: var(--laranja);
+    margin-right: 1em;
+}
+.paciente__ligacao{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.8em;
+    color: var(--cor-fonte-primaria);
+    text-decoration: none;
+    border: 1px solid var(--cinza);
+    padding: 0.8em 1em;
+    border-radius: 6px;
+    margin-right: 1em;
+}
+.paciente__endereco{
+    font-weight: 500;
+    font-size: 0.8em;
+    color: var( --cor-background);
+    text-decoration: none;
+    border: 1px solid var(--azul);
+    padding: 1em 7em;
+    border-radius: 6px;
+    background-color: var(--azul);
+    margin-right: 1em;
+}
+
+@media screen and (min-width: 1024px ){
+   .corpo__card{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+   }
+   .paciente__ficha{
+    margin: 2em;
+   }
+}
+@media screen and (min-width: 1728px ){
+    
+}
+
+
+
